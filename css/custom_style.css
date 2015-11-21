@@ -1,0 +1,370 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.btn-custom{
+	margin-top:15px;
+	border:solid;
+	border-width:thin;
+	font-size:25px;
+	color:#828282;
+	margin-left:10px;
+}
+.btn-custom:hover{
+	color:#565656;
+}
+
+.btn-custom-large{
+	border:solid;
+	border-width:thin;
+	font-size:50px;
+	font-weight:100;
+	border-color:#25b89a;
+	color:#828282;
+	margin-left:10px;
+}
+.btn-custom-large:hover{
+	color:#565656;
+}
+
+#border_text_area{
+	margin-top: -40px;
+	border:solid;
+	border-radius: 5px;
+	border-width: 1px;
+	color:#828282;
+}
+
+#text_area{
+	margin-top: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+
+.carousel-indicators li{
+	background-color:#34495D; 
+	border:1px solid #34495D;
+	width:18px;
+	height:18px;
+	margin-bottom:-30px;
+}
+
+.carousel-indicators li.active{
+	background-color:#FFFFFF; 
+	border:1px solid #34495D;
+	width:18px;
+	height:18px;
+	margin-bottom:-30px;
+}
+
+
+
+#section_inicio{
+	background-color:#34495D;
+	min-height:60vh;
+	margin-top:0px;
+}
+
+#section_art{
+	margin-top:50px;
+}
+
+
+.text_tittle_inicio{
+	font-size:100px;
+	font-weight:100 !important;
+	color:#FFFFFF;
+	font-family:inherit;
+	line-height:1.1;
+	margin:.67em 0;
+}
+
+.text_tittle_webdesign{
+	font-size:100px;
+	font-weight:100 !important;
+	color:#FFFFFF;
+	font-family:inherit;
+	line-height:1.1;
+	margin:.30em 0;
+}
+
+.text_tittle_slide{
+	font-size:80px;
+	font-weight:100;
+	color:#FFFFFF;
+	font-family:inherit;
+	line-height:1.1;
+	margin:.40em 0;
+}
+
+.text_tittle_slide2{
+	font-size:50px;
+	font-weight:100;
+	color:#FFFFFF;
+	font-family:inherit;
+	line-height:1.1;
+	margin:.40em 0;
+}
+
+.text_tittle_slide_asesoramiento{
+	font-size:80px;
+	font-weight:100;
+	color:#FFFFFF;
+	font-family:inherit;
+	line-height:1.1;
+	margin:.40em 0;
+}
+.text_tittle_servicios{
+	font-size:70px;
+	font-weight:100;
+	color:#FFFFFF;
+	font-family:inherit;
+	line-height:1.1;
+	margin:.40em 0;
+}
+.text_tittle_art{
+	font-size:50px;
+	font-weight:100 !important;
+	color:#FFFFFF;
+	font-family:inherit;
+	line-height:1.1;
+	margin:.30em 0;
+}
+.text_tittle_google{
+	font-size:60px;
+	font-weight:100 !important;
+	color:#FFFFFF;
+	font-family:inherit;
+	line-height:1.1;
+	margin:.30em 0;
+	text-align: center;
+}
+.text_inside {
+	font-size:20px;
+}
+.text_inside2 {
+	font-size:20px;
+}
+.text_inside_filosofia {
+	font-size: 20px;
+}
+.text_inside_asesoramiento {
+	font-size: 20px;
+}
+#img_landing_page{
+	margin-top:40px;
+	margin-bottom:66px;
+}
+
+
+#custom_project{
+	margin-top: 30px;
+}
+
+#medios_de_pago{
+	margin-top: 100px;
+	margin-bottom: 30px;
+}
+
+#section_contacto{
+	background-color:#34495D;
+	margin-top:90px;
+}
+#content_contacto{
+	margin-top: 50px;
+}
+
+#asesoramiento {
+	background-color:#5AC4BE;
+	margin-top:90px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+#win_to_win{
+	background-color:#F05525;
+	margin-top: 90px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+#servicios {
+	margin-top:90px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+#tel{
+	background-color:#34495D;
+}
+
+.text_inicio{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size:30px;
+	color:#FFFFFF;
+	font-family:inherit;
+
+	text-align:center;
+}
+	#img_payment{
+		max-width: 50%;
+	}
+
+	#web_site{
+		margin-bottom: 49px;
+	}
+	#logo_it360{
+	 max-width:40%;
+}
+
+#slide {
+	margin-top: 30px;
+}
+#img_fibra{
+	margin-top: 50px;
+}
+#img_servicios{
+	margin-top: 30px;
+}
+@media screen and (max-width:760px) {
+
+	#win_to_win_img{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	#text_asesoramiento{
+		margin-top: 10px;
+		text-align: center;
+
+	}
+	#asesoramiento_img{
+		max-width: 50%;
+		margin-bottom: 5px;
+	}
+	#img_servicios{
+		margin-top: 0px;
+		max-width: 50%;
+	}
+	#img_fibra{
+	display: none;
+}
+
+	#google{
+		max-width: 60%;
+	}
+
+	#logo_it360{
+	margin-top: 20px;
+	 max-width:40%;
+	}
+	#slide{
+		margin-bottom: 20px;
+		/*text-align: center;*/
+	}
+	#img_payment{
+		max-width: 30%;
+	}
+	.text_inicio{
+		margin-top: 0px;
+		margin-bottom: 0px;
+		font-size: 18px;
+	}
+
+	#section_tel{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+#content_contacto{
+	margin-top: 30px;
+	}
+#asesoramiento {
+	background-color:#5AC4BE;
+	margin-top:30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#win_to_win {
+	background-color:#F05525;
+	margin-top:30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#servicios {
+	margin-top:30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+	#img_prices{
+		margin-top: 15px;
+	}
+	.carousel-indicators li{
+	margin-bottom:-30px;
+}
+
+.carousel-indicators li.active{
+	margin-bottom:-30px;
+}
+
+	.btn-custom{
+		font-size:16px;
+		margin-left: 0px;
+	}
+
+	.btn-custom-large{
+		font-size: 24px;
+		font-weight:200;
+	}
+	.text_tittle_inicio{
+		font-size:40px;
+	}
+	.text_tittle_webdesign{
+		font-size:50px;
+	}
+	.text_tittle_slide{
+		font-size:30px;
+	}
+	.text_tittle_slide2{
+		font-size:18px;
+		text-align: center;
+	}
+
+	.text_tittle_slide_asesoramiento {
+		font-size: 24px;
+	}
+	.text_tittle_servicios{
+		margin-top: 15px;
+		font-size:22px;
+	}
+	.text_tittle_art{
+		font-size:24px;
+	}
+	.text_tittle_google{
+		font-size:40px;
+	}
+	.text_inside{
+		font-size:17px;
+	}
+	.text_inside2{
+		font-size: 14px;
+	}
+	.text_inside_filosofia{
+		font-size: 14px;
+	}
+	.text_inside_asesoramiento {
+		font-size:14px;
+	}
+	#section_inicio{
+		min-height:200px;
+	}
+	#logo_navbar{
+		max-width: 130px;
+	}
+	#contactanos{
+		margin-bottom: 20px;
+	}
+	#img_landing_page, #img_landing_page3{
+	margin-top:30px;
+	margin-bottom:0px;
+}
+
+}
