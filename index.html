@@ -87,7 +87,7 @@
 	<div class="row">
     	<div class="col-md-12">
 <p class="text_tittle_inicio ">Gestion de <span style="font-weight:400">obras</span> y proyectos de <span style="font-weight:400">cableados</span></p>
-<a href="#" id="porfolio_section" class="btn btn-custom" style="color:white;" onClick="change_categories(this.id)">Porfolio de Trabajos</a>
+<a href="#" id="porfolio_section" class="btn btn-custom" style="color:white; margin-bottom:30px" onClick="change_categories(this.id)">Porfolio de Trabajos</a>
         </div>
     </div>
 </div>
@@ -287,34 +287,38 @@ Tenemos una <span style="font-weight:400">amplia experiencia</span> dentro del s
     </div>
   </section>
 
+<!--Contact section -->
   <section id="section_contacto">
     <div class="container">
       <div class="row">
         <div class="col-md-7" id="content_contacto">
           <p class="text_tittle_webdesign" style="color:#FFFFFF">Contactenos</p>
         </br>
-        <form role="form" id="formulario" action="enviado.php" method="post">
+        <form role="form" id="formulario">
           <div class="form-group">
-          <input type="text" class="form-control" name="nombre" placeholder="Nombre y Apellido">
+          <input type="text" class="form-control" name="nombre" id="name" placeholder="Nombre y Apellido">
           </div>
           <div class="form-group">
-          <input type="text" class="form-control" name="telefono" placeholder="Teléfono">
+          <input type="text" class="form-control" name="telefono" id="phone" placeholder="Teléfono">
           </div>
           <div class="form-group">
-          <input type="email" class="form-control" name="email" placeholder="Email">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Email">
           </div>
-          <textarea class="form-control" name="consulta" rows="4" placeholder="Escriba su Consulta.."></textarea>
+          <textarea class="form-control" name="consulta" id="textField" rows="4" placeholder="Escriba su Consulta.."></textarea>
         </br>
-          <button type="submit" class="btn btn-default">Enviar</button>
+          <button class="btn btn-default" id="send_form">Enviar</button>
         </br>
         </br>  
           </form>
+        <p id="form_error" style="color:#FFFFFF"></p>
         <p class="text_inside" style="color:#FFFFFF; font-size:14px;">Nuestra compañía mantiene la confidencialidad de todos los datos e información que se genere entre las partes.</p>
         </div>
         <div class="col-md-5"></div>
       </div>
     </div>
   </section>
+<!-- End Contact section -->
+
   <section id="footer">
     <div class="container">
       <div class="row">
@@ -588,5 +592,38 @@ function change_categories(category) {
         document.getElementById('main_page').style.display = 'block';
     }
 }
+
+$("#send_form").on("click", function(e) {
+    e.preventDefault();
+    name = document.getElementById('name').value;  
+    email = document.getElementById('email').value;
+    textField = document.getElementById('textField').value;
+    if (!name || !email || !textField) {
+      document.getElementById('form_error').innerHTML = "*Por favor completa los campos";
+    } else {
+      var parametros = {
+          "nombre" : name,
+          "email" : email,
+          "consulta" : textField
+      };
+      $.ajax({
+        data: parametros,
+        url:   'enviado.php',
+        type:  'post',
+        success:  function (response) {
+             if (response == "true") {
+               alert('se envio');
+             } else {
+               alert('no funca');
+             }
+        }
+      });
+    }
+});
+
 </script>
 </html>
+
+
+
+
