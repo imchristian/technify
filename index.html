@@ -567,6 +567,21 @@ Tenemos una <span style="font-weight:400">amplia experiencia</span> dentro del s
 </section>
 <!-- END PORFOLIO PAGE -->
 
+<!-- Modal -->
+ <div class="modal fade" id="getCodeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+       <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+         <h4 class="modal-title" id="myModalLabel">  </h4>
+       </div>
+       <div class="modal-body" id="getCode" style="overflow-x: scroll;">
+          <p id="modal_response"></p>
+       </div>
+    </div>
+   </div>
+ </div>
+
 </body>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.js"></script>
@@ -612,9 +627,13 @@ $("#send_form").on("click", function(e) {
         type:  'post',
         success:  function (response) {
              if (response == "true") {
-               alert('se envio');
+               $("#myModalLabel").html("Gracias!");
+               $("#modal_response").html("Su consulta ha sido enviada correctamente.");
+               jQuery("#getCodeModal").modal('show');
              } else {
-               alert('no funca');
+               $("#myModalLabel").html("Ups!");
+               $("#modal_response").html("Algo no ha salido bien por favor intentalo nuevamente.");
+               jQuery("#getCodeModal").modal('show');
              }
         }
       });
